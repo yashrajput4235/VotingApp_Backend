@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
     },
     isVoted: {
         type: Boolean,
-        default: false  // Corrected here
+        default: false  
     }
 });
 userSchema.pre('save',async function(next){
